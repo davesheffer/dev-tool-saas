@@ -41,7 +41,7 @@ export default function DashboardPage() {
             Want to add a tool?
           </p>
           <a
-            href="https://github.com/coders-clan"
+            href="https://github.com/davesheffer/dev-tool-saas/blob/main/CONTRIBUTING.md"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-2 text-xs text-indigo-400 hover:text-indigo-300 transition-colors"
