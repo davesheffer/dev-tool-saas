@@ -1,0 +1,10 @@
+{
+  "name": "JSON Formatter",
+  "slug": "json-formatter",
+  "description": "Format, validate, and minify JSON with syntax highlighting",
+  "author": "Community",
+  "version": "1.0.0",
+
+  "category": "Data",
+  "tags": ["json", "formatter", "validator", "prettify"]
+}

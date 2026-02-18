@@ -1,0 +1,10 @@
+{
+  "name": "JWT Decoder",
+  "slug": "jwt-decoder",
+  "description": "Decode and inspect JSON Web Tokens (JWT) — view header, payload, and signature",
+  "author": "Community",
+  "version": "1.0.0",
+
+  "category": "Security",
+  "tags": ["jwt", "token", "decoder", "auth"]
+}
