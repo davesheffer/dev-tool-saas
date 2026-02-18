@@ -2,6 +2,7 @@ import type { PluginManifest, PluginRegistryEntry } from "@/types/plugin";
 
 import jsonFormatterManifest from "../../plugins/json-formatter/manifest.json";
 import jwtDecoderManifest from "../../plugins/jwt-decoder/manifest.json";
+import base64ConverterManifest from "../../plugins/base64-converter/manifest.json";
 
 /**
  * Plugin Registry
@@ -22,6 +23,10 @@ const registry: PluginRegistryEntry[] = [
   {
     manifest: jwtDecoderManifest as PluginManifest,
     load: () => import("../../plugins/jwt-decoder"),
+  },
+  {
+    manifest: base64ConverterManifest as PluginManifest,
+    load: () => import("../../plugins/base64-converter"),
   },
 ];
 

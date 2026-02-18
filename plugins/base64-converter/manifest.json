@@ -1,0 +1,15 @@
+{
+    "name": "Base64 Converter",
+    "slug": "base64-converter",
+    "description": "Encode and decode Base64 strings easily.",
+    "author": "Daniel Kalzan",
+    "version": "1.0.0",
+    "icon": "🔄",
+    "category": "Encoding",
+    "tags": [
+        "base64",
+        "encoder",
+        "decoder",
+        "converter"
+    ]
+}
