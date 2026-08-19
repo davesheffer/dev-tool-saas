@@ -1,4 +1,4 @@
-# ⚡ DevTools SaaS — Modular Developer Tools Platform
+# ⚡ DevTools SaaS — Modular Dev Tools Platform
 
 A plugin-based, open-source SaaS platform for everyday developer utilities. Built with **Next.js**, **TypeScript**, and **Tailwind CSS**.
 

@@ -39,7 +39,7 @@
     "tailwindcss": "^4",
     "typescript": "^5"
   },
-  "description": "A modular, plugin-based SaaS platform for developer tools.",
+  "description": "A modular, plugin-based SaaS platform for dev tools.",
   "keywords": [],
   "author": "",
   "license": "MIT"

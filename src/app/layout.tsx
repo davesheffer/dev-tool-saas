@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DevTools SaaS – Modular Developer Tools Platform",
+  title: "DevTools SaaS – Modular Dev Tools Platform",
   description:
-    "A plugin-based SaaS platform with modular developer tools. JSON Formatter, JWT Decoder, and more.",
+    "A plugin-based SaaS platform with modular dev tools. JSON Formatter, JWT Decoder, and more.",
 };
 
 export default function RootLayout({
