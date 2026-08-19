@@ -11,7 +11,7 @@ export default function DashboardPage() {
       {/* Hero */}
       <div className="text-center mb-14">
         <h1 className="text-3xl sm:text-4xl font-bold text-zinc-900 tracking-tight">
-          Developer Tools
+          Dev Tools
         </h1>
         <p className="mt-3 text-base text-zinc-500 max-w-xl mx-auto leading-relaxed">
           A modular, plugin-based platform for everyday dev utilities.
