@@ -31,18 +31,18 @@ export function ToolCard({ plugin }: ToolCardProps) {
       <Tooltip>
         <TooltipTrigger asChild>
           <Link href={`/tools/${plugin.slug}`} className="block">
-            <Card className="group relative p-5 hover:border-indigo-500/30 hover:bg-zinc-800/60 cursor-pointer h-full overflow-hidden">
+            <Card className="group relative p-5 hover:border-indigo-500/30 hover:bg-zinc-100/60 cursor-pointer h-full overflow-hidden">
               {/* Subtle gradient accent on hover */}
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-indigo-600/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
               <div className="relative flex items-start gap-4">
                 {/* Icon / Monogram */}
-                <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-zinc-800 border border-zinc-700/50 flex items-center justify-center text-xs font-semibold text-zinc-400 group-hover:border-indigo-500/30 group-hover:text-indigo-400 transition-all duration-200">
+                <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-zinc-100 border border-zinc-300/50 flex items-center justify-center text-xs font-semibold text-zinc-600 group-hover:border-indigo-500/30 group-hover:text-indigo-600 transition-all duration-200">
                   {initials(plugin.name)}
                 </div>
 
                 <div className="min-w-0 flex-1">
-                  <h3 className="text-sm font-semibold text-zinc-200 group-hover:text-indigo-300 transition-colors">
+                  <h3 className="text-sm font-semibold text-zinc-800 group-hover:text-indigo-500 transition-colors">
                     {plugin.name}
                   </h3>
                   <p className="mt-1 text-[13px] leading-relaxed text-zinc-500 line-clamp-2">
@@ -60,7 +60,7 @@ export function ToolCard({ plugin }: ToolCardProps) {
                 </div>
 
                 {/* Arrow */}
-                <div className="flex-shrink-0 text-zinc-700 group-hover:text-indigo-400 transition-colors mt-0.5">
+                <div className="flex-shrink-0 text-zinc-300 group-hover:text-indigo-600 transition-colors mt-0.5">
                   <svg
                     className="w-4 h-4"
                     fill="none"

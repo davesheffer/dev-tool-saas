@@ -176,7 +176,7 @@ export function SupportChat() {
         className={cn(
           "fixed bottom-5 right-5 z-50 flex items-center justify-center w-12 h-12 rounded-full shadow-lg transition-all duration-200",
           open
-            ? "bg-zinc-800 border border-zinc-700 text-zinc-400 hover:text-zinc-200"
+            ? "bg-zinc-100 border border-zinc-300 text-zinc-600 hover:text-zinc-800"
             : "bg-indigo-600 text-white hover:bg-indigo-500 shadow-indigo-500/25"
         )}
       >
@@ -195,16 +195,16 @@ export function SupportChat() {
 
       {/* Chat panel */}
       {open && (
-        <div className="fixed bottom-20 right-5 z-50 w-[360px] max-h-[520px] flex flex-col rounded-xl border border-zinc-800 bg-zinc-900/95 backdrop-blur-md shadow-2xl shadow-black/40 overflow-hidden animate-in fade-in-0 slide-in-from-bottom-4 duration-200">
+        <div className="fixed bottom-20 right-5 z-50 w-[360px] max-h-[520px] flex flex-col rounded-xl border border-zinc-200 bg-white/95 backdrop-blur-md shadow-2xl shadow-black/10 overflow-hidden animate-in fade-in-0 slide-in-from-bottom-4 duration-200">
           {/* Header */}
-          <div className="flex items-center gap-2.5 px-4 py-3 border-b border-zinc-800 bg-zinc-900">
-            <div className="w-7 h-7 rounded-lg bg-indigo-600/20 border border-indigo-500/20 flex items-center justify-center">
-              <svg className="w-3.5 h-3.5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <div className="flex items-center gap-2.5 px-4 py-3 border-b border-zinc-200 bg-white">
+            <div className="w-7 h-7 rounded-lg bg-indigo-100 border border-indigo-200 flex items-center justify-center">
+              <svg className="w-3.5 h-3.5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
               </svg>
             </div>
             <div>
-              <p className="text-sm font-semibold text-zinc-200">Support</p>
+              <p className="text-sm font-semibold text-zinc-800">Support</p>
               <p className="text-[11px] text-zinc-500">Contributing & Architecture</p>
             </div>
           </div>
@@ -217,8 +217,8 @@ export function SupportChat() {
                 className={cn(
                   "max-w-[85%] rounded-lg px-3 py-2 text-[13px] leading-relaxed whitespace-pre-line",
                   msg.role === "assistant"
-                    ? "bg-zinc-800 text-zinc-300 self-start"
-                    : "bg-indigo-600/20 text-indigo-200 ml-auto"
+                    ? "bg-zinc-100 text-zinc-700 self-start"
+                    : "bg-indigo-100 text-indigo-900 ml-auto"
                 )}
               >
                 {msg.text}
@@ -228,13 +228,13 @@ export function SupportChat() {
           </div>
 
           {/* Quick topics */}
-          <div className="px-4 py-2 border-t border-zinc-800/60">
+          <div className="px-4 py-2 border-t border-zinc-200/60">
             <div className="flex flex-wrap gap-1.5">
               {TOPICS.map((t) => (
                 <button
                   key={t.label}
                   onClick={() => handleTopic(t)}
-                  className="text-[11px] font-medium px-2 py-1 rounded-md bg-zinc-800 border border-zinc-700/50 text-zinc-400 hover:text-zinc-200 hover:border-indigo-500/30 transition-colors"
+                  className="text-[11px] font-medium px-2 py-1 rounded-md bg-zinc-100 border border-zinc-300/50 text-zinc-600 hover:text-zinc-800 hover:border-indigo-500/30 transition-colors"
                 >
                   {t.label}
                 </button>
@@ -243,7 +243,7 @@ export function SupportChat() {
           </div>
 
           {/* Input */}
-          <div className="px-3 py-2.5 border-t border-zinc-800">
+          <div className="px-3 py-2.5 border-t border-zinc-200">
             <form
               onSubmit={(e) => {
                 e.preventDefault();
@@ -256,7 +256,7 @@ export function SupportChat() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 placeholder="Ask a question..."
-                className="flex-1 h-8 bg-zinc-800 border border-zinc-700/50 rounded-lg px-3 text-sm text-zinc-200 placeholder:text-zinc-600 focus:outline-none focus:ring-1 focus:ring-indigo-500/40"
+                className="flex-1 h-8 bg-zinc-100 border border-zinc-300/50 rounded-lg px-3 text-sm text-zinc-800 placeholder:text-zinc-400 focus:outline-none focus:ring-1 focus:ring-indigo-500/40"
               />
               <button
                 type="submit"

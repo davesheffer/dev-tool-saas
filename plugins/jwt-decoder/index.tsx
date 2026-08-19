@@ -86,7 +86,7 @@ export default function JwtDecoder() {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0..."
-          className="h-32 bg-zinc-900 border-zinc-800 text-zinc-200 placeholder:text-zinc-600"
+          className="h-32 bg-white border-zinc-200 text-zinc-800 placeholder:text-zinc-400"
         />
       </div>
 
@@ -100,7 +100,7 @@ export default function JwtDecoder() {
 
       {/* Error */}
       {error && (
-        <div className="bg-red-950/40 border border-red-500/20 rounded-lg p-3 text-sm text-red-400">
+        <div className="bg-red-50 border border-red-200 rounded-lg p-3 text-sm text-red-600">
           <span className="font-semibold">Error:</span> {error}
         </div>
       )}
@@ -124,7 +124,7 @@ export default function JwtDecoder() {
               </CardHeader>
               <CardContent>
                 <ScrollArea className="max-h-80">
-                  <pre className="text-sm font-mono text-zinc-200 whitespace-pre-wrap">
+                  <pre className="text-sm font-mono text-zinc-800 whitespace-pre-wrap">
                     {JSON.stringify(decoded.header, null, 2)}
                   </pre>
                 </ScrollArea>
@@ -145,7 +145,7 @@ export default function JwtDecoder() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <ScrollArea className="max-h-80">
-                  <pre className="text-sm font-mono text-zinc-200 whitespace-pre-wrap">
+                  <pre className="text-sm font-mono text-zinc-800 whitespace-pre-wrap">
                     {JSON.stringify(decoded.payload, null, 2)}
                   </pre>
                 </ScrollArea>
@@ -155,18 +155,18 @@ export default function JwtDecoder() {
                   <>
                     <Separator />
                     <div className="space-y-2">
-                      <h4 className="text-[11px] font-semibold text-indigo-400 uppercase tracking-wider">
+                      <h4 className="text-[11px] font-semibold text-indigo-600 uppercase tracking-wider">
                         Timestamps
                       </h4>
                       <div className="text-sm space-y-1">
                         {typeof decoded.payload.iat === "number" && (
-                          <p className="text-zinc-300">
+                          <p className="text-zinc-700">
                             <span className="text-zinc-500">Issued At (iat):</span>{" "}
                             {formatTimestamp(decoded.payload.iat)}
                           </p>
                         )}
                         {typeof decoded.payload.exp === "number" && (
-                          <p className="text-zinc-300">
+                          <p className="text-zinc-700">
                             <span className="text-zinc-500">Expires (exp):</span>{" "}
                             {formatTimestamp(decoded.payload.exp)}
                             {decoded.payload.exp * 1000 < Date.now() && (
@@ -177,7 +177,7 @@ export default function JwtDecoder() {
                           </p>
                         )}
                         {typeof decoded.payload.nbf === "number" && (
-                          <p className="text-zinc-300">
+                          <p className="text-zinc-700">
                             <span className="text-zinc-500">Not Before (nbf):</span>{" "}
                             {formatTimestamp(decoded.payload.nbf)}
                           </p>
@@ -196,7 +196,7 @@ export default function JwtDecoder() {
                 <CardTitle>Signature</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-sm font-mono text-zinc-400 break-all bg-zinc-900 rounded-lg p-4 border border-zinc-800">
+                <div className="text-sm font-mono text-zinc-600 break-all bg-white rounded-lg p-4 border border-zinc-200">
                   {decoded.signature}
                 </div>
               </CardContent>
