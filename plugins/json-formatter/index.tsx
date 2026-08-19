@@ -74,7 +74,7 @@ export default function JsonFormatter() {
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   placeholder='{"key": "value"}'
-                  className="h-80 bg-zinc-900 border-zinc-800 text-zinc-200 placeholder:text-zinc-600"
+                  className="h-80 bg-white border-zinc-200 text-zinc-800 placeholder:text-zinc-500"
                 />
               </div>
 
@@ -98,19 +98,19 @@ export default function JsonFormatter() {
                     </Tooltip>
                   )}
                 </div>
-                <ScrollArea className="h-80 rounded-lg border border-zinc-800 bg-zinc-900">
+                <ScrollArea className="h-80 rounded-lg border border-zinc-200 bg-white">
                   <Textarea
                     id="json-output-fmt"
                     value={output}
                     readOnly
                     placeholder="Formatted output will appear here..."
-                    className="h-full min-h-80 border-0 text-emerald-400 bg-transparent placeholder:text-zinc-600 focus-visible:ring-0"
+                    className="h-full min-h-80 border-0 text-emerald-600 bg-transparent placeholder:text-zinc-500 focus-visible:ring-0"
                   />
                 </ScrollArea>
               </div>
             </div>
 
-            <Separator className="my-4 bg-zinc-800" />
+            <Separator className="my-4 bg-zinc-200" />
 
             <div className="flex gap-3">
               <Button onClick={format}>Format</Button>
@@ -130,7 +130,7 @@ export default function JsonFormatter() {
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   placeholder='{"key": "value"}'
-                  className="h-80 bg-zinc-900 border-zinc-800 text-zinc-200 placeholder:text-zinc-600"
+                  className="h-80 bg-white border-zinc-200 text-zinc-800 placeholder:text-zinc-500"
                 />
               </div>
 
@@ -154,19 +154,19 @@ export default function JsonFormatter() {
                     </Tooltip>
                   )}
                 </div>
-                <ScrollArea className="h-80 rounded-lg border border-zinc-800 bg-zinc-900">
+                <ScrollArea className="h-80 rounded-lg border border-zinc-200 bg-white">
                   <Textarea
                     id="json-output-min"
                     value={output}
                     readOnly
                     placeholder="Minified output will appear here..."
-                    className="h-full min-h-80 border-0 text-emerald-400 bg-transparent placeholder:text-zinc-600 focus-visible:ring-0"
+                    className="h-full min-h-80 border-0 text-emerald-600 bg-transparent placeholder:text-zinc-500 focus-visible:ring-0"
                   />
                 </ScrollArea>
               </div>
             </div>
 
-            <Separator className="my-4 bg-zinc-800" />
+            <Separator className="my-4 bg-zinc-200" />
 
             <div className="flex gap-3">
               <Button onClick={minify}>Minify</Button>
@@ -179,7 +179,7 @@ export default function JsonFormatter() {
 
         {/* Error */}
         {error && (
-          <div className="bg-red-950/40 border border-red-500/20 rounded-lg p-3 text-sm text-red-400">
+          <div className="bg-red-50 border border-red-200 rounded-lg p-3 text-sm text-red-600">
             <span className="font-semibold">Error:</span> {error}
           </div>
         )}
