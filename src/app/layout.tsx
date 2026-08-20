@@ -39,7 +39,7 @@ export default function RootLayout({
         {/* Footer */}
         <footer className="border-t border-zinc-200/60 mt-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-zinc-400">
-            <p>Built with care by the <a href="https://github.com/coders-clan" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-500 transition-colors">Coders Clan</a> community</p>
+            <p>Made with <span className="text-rose-500" aria-hidden="true">&hearts;</span><span className="sr-only">love</span> by the <a href="https://github.com/coders-clan" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-500 transition-colors">Coders Clan</a> community</p>
             <div className="flex items-center gap-4">
               <a href="https://github.com/davesheffer/dev-tool-saas" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-600 transition-colors">GitHub</a>
               <a href="https://github.com/davesheffer/dev-tool-saas/issues" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-600 transition-colors">Issues</a>
