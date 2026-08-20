@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Navbar } from "@/components/navbar";
 import { SupportChat } from "@/components/support-chat";
+import { WhatsAppButton } from "@/components/whatsapp-button";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -33,6 +34,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <SupportChat />
+        <WhatsAppButton />
 
         {/* Footer */}
         <footer className="border-t border-zinc-200/60 mt-16">
